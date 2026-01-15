@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Information -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An interactive digital portal showcasing the rich history, milestones, and stories of Ngee Ann Polytechnic. A project by the Lien Ying Chow Library.">
+<meta name="keywords" content="Ngee Ann Polytechnic, NP, History, NP Memory Lane, Lien Ying Chow Library, Singapore Education">
+<!-- Open Graph Meta Tags for Social Sharing -->
+<meta property="og:title" content="NP Memory Lane | A Journey Through Our History">
+<meta property="og:description" content="Explore the legacy of Ngee Ann Polytechnic through an interactive timeline, photo galleries, and community stories.">
+<meta property="og:image" content="media/og_image.jpg"> <!-- Add a 1200x630px image for social sharing -->
+<meta property="og:url" content="https://www.your-website-url.com"> <!-- Replace with your actual URL when deployed -->
+<meta property="og:type" content="website">
+
+<title>NP Memory Lane | A Journey Through Our History</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Favicon -->
+<link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body><!-- =================================================================
+HEADER & NAVIGATION
+================================================================== -->
+<header id="main-header">
+    <div class="container">
+        <a href="#hero" class="logo-link">
+            <div class="logo">
+                <img src="media/np_logo.png" alt="NP Logo">
+                <h1>NP Memory Lane</h1>
+            </div>
+        </a>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#pillars" class="nav-link">Our Pillars</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#vr-videos" class="nav-link">VR Experience</a></li>
+                <li><a href="#stories" class="nav-link">Stories</a></li>
+            </ul>
+        </nav>
+        <button id="story-cta-btn" class="btn btn-primary">Share Your Story</button>
+        <button id="mobile-menu-toggle" aria-label="Open navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
+
+<!-- =================================================================
+MAIN CONTENT WRAPPER
+================================================================== -->
+<main>
+
+    <!-- =================================================================
+    HERO SECTION
+    ================================================================== -->
+    <section id="hero">
+        <img src="media/hero_background.jpg" alt="NP Campus Background" id="hero-background" class="hero-background-image">
+        <video autoplay muted loop playsinline id="hero-video">
+            <source src="media/np_hero_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="animate-on-load">Bringing NP's History <span class="highlight">to Life</span></h2>
+            <p class="animate-on-load">An interactive journey through our milestones, memories, and achievements.</p>
+            <div class="hero-stats animate-on-load">
+                <div class="stat-item">
+                    <h3 class="stat-counter" data-target="62">0</h3>
+                    <p>Years of History</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-counter" data-target="200000">0</h3>
+                    <p>Graduates & Counting</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-counter" data-target="40">0</h3>
+                    <p>Academic Courses</p>
+                </div>
+            </div>
+        </div>
+        <a href="#timeline" class="scroll-down-indicator" aria-label="Scroll to next section">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- =================================================================
+    VERTICAL TIMELINE SECTION (for testing purposes)
+    ================================================================== -->
+    <section id="timeline">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story Through Time</h2>
+                <p>Scroll to uncover the pivotal moments that shaped our journey.</p>
+            </div>
+            <div class="v-timeline-container">
+                <!-- Timeline Item 1 -->
+                <div class="v-timeline-item">
+                    <div class="v-timeline-content card" data-modal="modal-1963">
+                        <span class="timeline-tag">Founding</span>
+                        <h3>1963: The Beginning</h3>
+                        <p>Ngee Ann College was founded by the Ngee Ann Kongsi, opening its doors at the Teochew Building on Tank Road.</p>
+                        <span class="read-more">Click to Explore</span>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="v-timeline-item">
+                    <div class="v-timeline-content card" data-modal="modal-1982">
+                        <span class="timeline-tag">Milestone</span>
+                        <h3>1982: A New Identity</h3>
+                        <p>The institution was renamed Ngee Ann Polytechnic, marking its official transition into a premier polytechnic.</p>
+                         <span class="read-more">Click to Explore</span>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="v-timeline-item">
+                    <div class="v-timeline-content card" data-modal="modal-1988">
+                         <span class="timeline-tag">Legacy</span>
+                        <h3>1988: The First 25 Years</h3>
+                        <p>The "Ngee Ann Story" book is published, a comprehensive chronicle of our formative years and achievements.</p>
+                        <span class="read-more">Click to Explore</span>
+                    </div>
+                </div>
+                <!-- Timeline Item 4 -->
+                <div class="v-timeline-item">
+                    <div class="v-timeline-content card" data-modal="modal-2000s">
+                         <span class="timeline-tag">Innovation</span>
+                        <h3>The 2000s: A New Millennium</h3>
+                        <p>NP embraces technology and global perspectives, expanding its campus and launching interdisciplinary programmes.</p>
+                       <span class="read-more">Click to Explore</span>
+                    </div>
+                </div>
+                 <!-- Add More Timeline Items As Needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+    PILLARS OF EXCELLENCE SECTION (TABS)
+    ================================================================== -->
+    <section id="pillars">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Pillars of Excellence</h2>
+                <p>Discover the core values that define the NP experience.</p>
+            </div>
+            <div class="tab-container">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="innovation">Innovation & Tech</button>
+                    <button class="tab-btn" data-tab="student-life">Student Life & Culture</button>
+                    <button class="tab-btn" data-tab="community">Community Impact</button>
+                </div>
+                <div class="tab-content-area">
+                    <!-- Tab Pane 1: Innovation -->
+                    <div class="tab-pane active" id="innovation">
+                        <div class="pane-content">
+                            <img src="media/pillar_innovation.jpg" alt="Students working with technology">
+                            <div class="pane-text">
+                                <h3>Forging the Future</h3>
+                                <p>From our earliest days, NP has been a hub for innovation. We were pioneers in introducing new diploma programs and integrating technology into our curriculum. Today, our state-of-the-art labs, industry collaborations, and focus on design thinking prepare students to be future-ready leaders and problem-solvers in a rapidly changing world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab Pane 2: Student Life -->
+                    <div class="tab-pane" id="student-life">
+                         <div class="pane-content">
+                            <img src="media/pillar_student_life.jpg" alt="Vibrant student activities on campus">
+                            <div class="pane-text">
+                                <h3>A Vibrant Community</h3>
+                                <p>Life at NP has always been more than just academics. The vibrant history of our Co-Curricular Activities (CCAs), from sports and arts to special interest groups, has shaped a holistic and dynamic campus culture. These experiences foster teamwork, leadership, and lifelong friendships, forming the heart of the NP memory.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab Pane 3: Community -->
+                    <div class="tab-pane" id="community">
+                        <div class="pane-content">
+                            <img src="media/pillar_community.jpg" alt="Students engaged in community service">
+                            <div class="pane-text">
+                                <h3>Service with a Heart</h3>
+                                <p>Rooted in our founding mission, NP has a long-standing tradition of giving back to the community. Through local and overseas service-learning projects, our students and staff have consistently made a positive impact, embodying the values of empathy, social responsibility, and active citizenship that define the NP spirit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+    FILTERABLE GALLERY SECTION
+    ================================================================== -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Moments in Time</h2>
+                <p>A glimpse into the vibrant life at NP through the years.</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="campus">Campus Life</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="history">Early Years</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="campus">
+                    <img src="media/student_life_1.jpg" alt="NP students collaborating">
+                </div>
+                <div class="gallery-item" data-category="history">
+                    <img src="media/timeline_1963.jpg" alt="The original NP building">
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="media/student_life_3.jpg" alt="NP graduation ceremony">
+                </div>
+                <div class="gallery-item" data-category="campus">
+                    <img src="media/student_life_2.jpg" alt="Modern NP architecture">
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="media/pillar_community.jpg" alt="NP open house event">
+                </div>
+                <div class="gallery-item" data-category="history">
+                    <img src="media/timeline_1988.jpg" alt="Archival photo of a classroom">
+                </div>
+                <!-- Add more gallery items with data-category attributes -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+    VR VIDEOS SECTION
+    ================================================================== -->
+    <section id="vr-videos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Virtual Reality Experience</h2>
+                <p>Explore Ngee Ann Polytechnic's historic places and landmarks in 360-degree immersive videos.</p>
+            </div>
+            <div class="vr-gallery-grid">
+                <!-- VR Video 1 -->
+                <div class="vr-video-card">
+                    <div class="vr-video-thumbnail">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/o3XS_5L--Qg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="vr-video-info">
+                        <h3>Main Campus Grand Hall</h3>
+                        <p>360° Virtual Tour of NP's iconic Grand Hall, a witness to countless graduations and celebrations since the 1980s.</p>
+                    </div>
+                </div>
+                <!-- VR Video 2 -->
+                <div class="vr-video-card">
+                    <div class="vr-video-thumbnail">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1-goEmM0c4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="vr-video-info">
+                        <h3>Heritage Library Wing</h3>
+                        <p>Explore the historic Lien Ying Chow Library in 360°, a sanctuary of knowledge and a hub of student life.</p>
+                    </div>
+                </div>
+                <!-- VR Video 3 -->
+                <div class="vr-video-card">
+                    <div class="vr-video-thumbnail">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/rnw1RbfWm2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="vr-video-info">
+                        <h3>Innovation Hub & Labs</h3>
+                        <p>360° tour of NP's state-of-the-art Innovation Hub, showcasing decades of technological advancement and research excellence.</p>
+                    </div>
+                </div>
+                <!-- VR Video 4 -->
+                <div class="vr-video-card">
+                    <div class="vr-video-thumbnail">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/5ZcmGhgFOc8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="vr-video-info">
+                        <h3>Student Canteen & Commons</h3>
+                        <p>Step into the vibrant Student Canteen and Commons, the heart of campus social life and countless student memories.</p>
+                    </div>
+                </div>
+                <!-- VR Video 5 -->
+                <div class="vr-video-card">
+                    <div class="vr-video-thumbnail">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/-b5M7KJVADQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="vr-video-info">
+                        <h3>Auditorium & Performance Space</h3>
+                        <p>Immerse yourself in the Auditorium where countless performances, seminars, and milestone events have taken place.</p>
+                    </div>
+                </div>
+                <!-- VR Video 6 -->
+                <div class="vr-video-card">
+                    <div class="vr-video-thumbnail">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/O_jUCp9R5OM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="vr-video-info">
+                        <h3>Sports Complex & Recreation</h3>
+                        <p>Explore the Sports Complex and recreational facilities that have fostered NP's vibrant culture of co-curricular excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+    COMMUNITY STORIES SECTION
+    ================================================================== -->
+    <section id="stories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Voices of Our Community</h2>
+                <p>Memories and reflections from those who walked these halls.</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card card">
+                    <blockquote>"My time at NP was transformative. The lecturers were more than teachers; they were mentors who pushed us to be our best. The friendships I made here have lasted a lifetime."</blockquote>
+                    <cite>— Tan Wei Ling, Class of 1998</cite>
+                </div>
+                <div class="story-card card">
+                    <blockquote>"I remember the buzz of the old canteen and the late nights spent in the library. NP gave me the practical skills and confidence to start my own business."</blockquote>
+                    <cite>— David Chen, Class of 2005</cite>
+                </div>
+                <div class="story-card card">
+                    <blockquote>"As a staff member for over 20 years, I've seen NP evolve, but its core spirit of care and excellence has never changed. It's a privilege to be part of this family."</blockquote>
+                    <cite>— Mrs. Indranee, School of Engineering</cite>
+                </div>
+            </div>
+            <div class="story-cta-container">
+                <button id="story-share-btn-main" class="btn btn-secondary">Share Your NP Memory</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- =================================================================
+FOOTER SECTION
+================================================================== -->
+<footer id="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col" id="about-col">
+                <h4>About NP Memory Lane</h4>
+                <p>This digital portal is an initiative by the Lien Ying Chow Library to preserve, celebrate, and share the rich history of Ngee Ann Polytechnic with our community and the world.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#timeline">Interactive Timeline</a></li>
+                    <li><a href="#gallery">Photo Gallery</a></li>
+                    <li><a href="#stories">Community Stories</a></li>
+                    <li><a href="https://www.np.edu.sg" target="_blank">Main NP Website</a></li>
+                    <li><a href="https://www.np.edu.sg/library" target="_blank">Library Portal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact & Location</h4>
+                <ul>
+                    <li>📞 Phone: +65 6460 6622</li>
+                    <li>📧 Email: library@np.edu.sg</li>
+                    <li>📍 Lien Ying Chow Library, NP</li>
+                    <li>Singapore 599489</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+    <a href="https://www.facebook.com/ngeeannpoly" target="_blank" aria-label="Facebook" title="Facebook">
+        <img src="media/facebook-logo.png" alt="Facebook Logo">
+    </a>
+    <a href="https://www.instagram.com/ngeeannpoly" target="_blank" aria-label="Instagram" title="Instagram">
+        <img src="media/instagram-logo.png" alt="Instagram Logo">
+    </a>
+    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+        <img src="media/linkedin-logo.png" alt="LinkedIn Logo">
+    </a>
+    <a href="https://www.youtube.com/@NgeeAnnPolyNP" target="_blank" aria-label="YouTube" title="YouTube">
+        <img src="media/youtube-logo.png" alt="YouTube Logo">
+    </a>
+</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ngee Ann Polytechnic. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- =================================================================
+MODALS (HIDDEN BY DEFAULT)
+================================================================== -->
+<!-- Timeline Modals -->
+<div id="modal-1963" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="media/timeline_1963.jpg" alt="Ngee Ann College in 1963">
+        <h2>1963: The Dawn of an Era</h2>
+        <p>On this historic year, Ngee Ann College was established by the Ngee Ann Kongsi with a vision to provide quality education. It started with just over 100 students at the Teochew Building on Tank Road, laying the foundation for what would become a premier polytechnic in Singapore.</p>
+    </div>
+</div>
+<div id="modal-1982" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="media/timeline_1982.jpg" alt="NP Campus in the 80s">
+        <h2>1982: A New Identity as Ngee Ann Polytechnic</h2>
+        <p>A landmark year where Ngee Ann Technical College was officially renamed Ngee Ann Polytechnic. This change reflected its expanded role and curriculum, aligning it with Singapore's growing need for a skilled technical workforce and marking its evolution into a full-fledged polytechnic.</p>
+    </div>
+</div>
+<div id="modal-1988" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="media/timeline_1988.jpg" alt="The Ngee Ann Story book cover">
+        <h2>1988: Celebrating 25 Years of History</h2>
+        <p>To commemorate its silver jubilee, the polytechnic published "The Ngee Ann Story: The First 25 Years (1963–1988)". This book documented the institution's challenges, growth, and pivotal moments, serving as a testament to the pioneering spirit of its staff and students.</p>
+    </div>
+</div>
+<div id="modal-2000s" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="media/timeline_2000s.jpg" alt="Modern NP Campus">
+        <h2>The 2000s: Innovation and Expansion</h2>
+        <p>The turn of the millennium marked a period of rapid growth. NP embraced new technologies, launched interdisciplinary programs like the NP-NUS Overseas Colleges programme, and expanded its campus facilities. This era cemented NP's reputation as a forward-thinking institution committed to nurturing global-ready graduates.</p>
+    </div>
+</div>
+
+<!-- Share Your Story Modal -->
+<div id="story-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Share Your NP Memory</h2>
+        <p>Your story is a part of our history. Fill out the form below to share your favorite memory.</p>
+        <form id="story-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="grad-year">Class of (Year)</label>
+                <input type="text" id="grad-year" name="grad-year">
+            </div>
+            <div class="form-group">
+                <label for="story-text">Your Story</label>
+                <textarea id="story-text" name="story-text" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Story</button>
+        </form>
+    </div>
+</div>
+
+<!-- AI Assistant Chatbot -->
+<div id="ai-assistant">
+    <div id="chatbot-widget">
+        <div id="chatbot-header">
+            <h3>NP Assistant</h3>
+            <button id="chatbot-minimize" aria-label="Minimize chatbot">−</button>
+        </div>
+        <div id="chatbot-messages">
+            <div class="chat-message bot-message">
+                <p>Hello! 👋 I'm the NP Assistant. I'm here to help answer any questions about Ngee Ann Polytechnic's history, facilities, and more. How can I assist you today?</p>
+            </div>
+        </div>
+        <div id="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Ask me anything...">
+            <button id="chatbot-send" aria-label="Send message">Send</button>
+        </div>
+    </div>
+    <button id="chatbot-toggle" aria-label="Open AI Assistant">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+</div>
+
+<!-- JavaScript File -->
+<script src="js/main.js"></script>
+</body>
+</html>
